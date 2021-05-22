@@ -14,7 +14,7 @@
   - name: install git
     yum: name=git state=present
   - name: get repo
-    git: repo=https://github.com/hermann1990/dockerfile.git dest=/tmp/repository
+    git: repo=https://https://github.com/hermann1990/webappdeploy.git dest=/tmp/mygitrepo
   - name: Build Dockerfile
     command: chdir=/tmp/gitrepo docker build -t addressbook:ansible .
   - name: run Image
