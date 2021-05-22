@@ -16,6 +16,6 @@
   - name: get repo
     git: repo=https://github.com/hermann1990/webappdeploy.git dest=/tmp/githurepo
   - name: Build Dockerfile
-    command: chdir=/tmp/mygitrepo docker build -t addressbook:ansible .
+    command: chdir=/tmp/githurepo docker build -t addressbook:ansible .
   - name: run Image
     command: docker run -itd -P addressbook:ansible
